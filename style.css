@@ -1,0 +1,215 @@
+/* Barra de navegacion */
+.navbar{
+  padding: 2rem;
+  background-color: whitesmoke;
+}
+
+.navbar-collapse{
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilo general */
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1{
+  font-size: 2.5rem;
+  font-family: 'Gloock', serif;
+}
+.seccion-oscura{
+  background-color: black;
+  color: white;
+}
+.seccion-clara{
+  color: black;
+  background-color: white;
+}
+.seccion-titulo{
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: 'Gloock', serif;
+}
+.seccion-texto{
+  font-size: 1.2rem;
+}
+p{
+  font-size: 15px;
+  font-family: 'Gloock', serif;
+  font-weight: lighter;
+}
+
+/* Presentacion */
+.hero{
+  background-color: white;
+  min-height: 450px;
+  text-align: center;
+}
+.hero-principal{
+  padding: 3rem;
+}
+.foto-de-perfil{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px;
+}
+.hero-principal h2{
+  font-size: 1.5rem;
+  font-family: 'Gloock', serif;
+}
+
+/* Acerca de mi */
+.acerca-de-mi{
+  height: 500px;
+  padding: 10px;
+}
+.acerca-de-mi .contenedor{
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Experiencia laboral */
+.experiencia-laboral{
+  padding: 40px 40px 60px 40px;
+}
+.experiencia-laboral .columna{
+  padding: 20px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+.experiencia-laboral .columna:hover{
+  color: white;
+  background-color: #1b1b32;
+}
+.experiencia-titulo{
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.experiencia-tiempo{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* Educacion */
+.educacion{
+  padding: 40px;
+}
+.educacion .columna{
+  padding: 20px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+.educacion .columna:hover{
+  color: black;
+  background-color: white;
+}
+.educacion-titulo{
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.educacion-grado{
+  font-size: 15px;
+  font-weight: bold;
+}
+/* Contacto */
+.contacto .container{
+  max-width: 1000px;
+  min-height: 200px;
+  padding: 30px;
+}
+.contacto .rectangulo{
+  margin-top: -5rem;
+  background-color: rgb(13,110,253);
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px white;
+}
+.contacto .row{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.contacto .descripcion{
+  color: white;
+  font-size: 1.2rem;
+}
+.contacto button{
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+.contacto button:hover{
+  background-color: white;
+  color: black;
+}
+.contacto button i{
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+.contacto button:hover i{
+  color: black;
+}
+
+/* Pie de pagina */
+footer{
+  min-height: 300px;
+}
+.footer-texto{
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: 'Tilt Warp', cursive;
+}
+.iconos-redes-sociales a{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+.iconos-redes-sociales i{
+  color: black;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+.iconos-redes-sociales a:hover{
+  background-color: black;
+  border: 2px solid rgb(13,110,253);
+}
+.iconos-redes-sociales a:hover i{
+  color: white;
+}
+.derechos-de-autor{
+  font-size: 15px;
+  color: black;
+  padding: 20px;
+}
+@media screen and (max-width: 767px){
+  .navbar-brand{
+    display: none;
+  }
+}
